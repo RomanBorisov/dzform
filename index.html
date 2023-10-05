@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container ">
+        <h1>Здоровый образ жизни </h1>
+        <article>
+            Здоровый образ жизни — это набор привычек и действий, способствующих укреплению и сохранению иммунитета и физических возможностей, устранению факторов, негативно влияющих на самочувствие и организм в целом. Строгого понятия ЗОЖ не сформулировано, поэтому люди часто воспринимают его по-своему. Для кого-то это спорт семь раз в неделю, а кто-то считает, что стал вести здоровый образ жизни, отказавшись от алкоголя и сигарет.
+            <h2>Что дает здоровый образ жизни</h2>
+            В Гарвардском университете провели масштабное исследование влияния привычек, связанных со здоровьем, на ожидаемую продолжительность жизни [1]. Ученые рассмотрели данные более 78 тыс. женщин с 1980 по 2014 год, а также 40 тыс. мужчин с 1986 по 2014 год. Исследователи приняли во внимание информацию о питании, физической активности, массе тела, курении и потреблении алкоголя, собрав ее из регулярно проводимого анкетирования. На основании полученных данных были сделаны выводы о влиянии вышеперечисленных критериев на самочувствие, болезни и сроки жизни людей, прослежена корреляция между ЗОЖ и качеством жизни.
+
+        </article>
+        <h3>Заполните не большую форму, а после ответьте на пару вопросов</h3>
+        <form>
+            <div class="profile">
+                <label>Ваш телефон<input type="phone" name="phone" pattern="^\+7[1-9]{10}$" required></label>
+                <label>Ваш email:<input type="email" name="email" required></label>
+                <label>Пароль:<input type="password" name="password" minlength="6" maxlength="15" required></label>
+                <label>Фото (не обязательно):<input type="file"></label>
+                <input type="submit">
+            </div>
+            <div class="survey">
+                <label>Как вас зовут?<input type="text" required></label>
+                <label for="gender">Ваш пол?</label>
+                <select id="gender" name="gender">
+                    <option value="male">Мужчина</option>
+                    <option value="female">Женщина</option>
+                </select>
+                <label>Дата рождения<input type="date"></label>
+                <div class="habit">
+                    <label for="habit">У вас есть вредные привычки?</label><br>
+                    <div class="ther">
+                        <input type="radio" id="da" name="habit">
+                        <label for="da">Да</label><br>
+                        <input type="radio" id="net" name="habit">
+                        <label for="net">Нет</label><br>
+                    </div>
+                    
+                </div>
+                <div class="whhabit">
+                    <label for="which">Если есть, выберите какие:</label>
+                    <div class="harmful">
+                        <label for="Тобачные">Тобачные</label>
+                        <input type="checkbox" name="which" id="Сигареты">
+                        <label for="Алкаголь">Алкаголь</label>
+                        <input type="checkbox" name="which" id="Алкаголь">
+                    </div>
+                </div>
+                
+                <label for="why">Напишите как эта привычка у вас появилась и почему не можете избавиться?</label>
+                <textarea id="why"></textarea>
+                <input class="why" type="submit">
+            </div>
+            
+            
+        </form>
+        
+    </div>
+        
+        
+</body>
+</html>
